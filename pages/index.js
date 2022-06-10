@@ -8,14 +8,11 @@ export default function Home() {
         <title>DarkWorld E-Store</title>
         <meta name="description" content="ecommeres store,mobiles store online," />
         <meta name="keywords" content="ecommeres store,mobiles store online,buy mobile,oppo,vivo" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico.jpg" />
       </Head>
-
-      <main className="">
-      
-      </main>
-
-   
+      <div className='bg-red-500'>
+        <img src="/2.jpg" alt=""/>
+      </div>
     </div>
   )
 }
