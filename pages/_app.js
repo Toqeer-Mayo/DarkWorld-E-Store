@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     try {
       if(localStorage.getItem("cart")){
         setcart(JSON.parse(localStorage.getItem("cart")))
-        // saveCart(JSON.parse(localStorage.getItem("cart")));
+        saveCart(JSON.parse(localStorage.getItem("cart")));
       }
       
     } catch (error) {
@@ -39,7 +39,6 @@ function MyApp({ Component, pageProps }) {
     }
     setcart(newCart);
     saveCart(newCart);
-    setsubTotal(newCart[pId].qty)
   };
 
   // logic to add items in cart.

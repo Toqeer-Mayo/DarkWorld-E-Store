@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaShoppingCart } from 'react-icons/fa';
+import { MdAccountCircle} from 'react-icons/md';
 import { AiFillCloseCircle,AiFillMinusCircle } from 'react-icons/ai';
 import {BsFillPlusCircleFill,BsFillBagCheckFill} from 'react-icons/bs';
 import { useRef } from 'react';
-const Navbar = ({cart,addToCart,removeFromCart,clearCart}) => {
+const Navbar = ({cart,addToCart,removeFromCart,clearCart,subTotal}) => {
     console.log(cart)
     const ref = useRef();
     const toggleCart = () => {
@@ -32,7 +33,10 @@ const Navbar = ({cart,addToCart,removeFromCart,clearCart}) => {
                     <Link href={'/lcd'}><a className="text-xl mr-5 hover:text-black-900">LCD</a></Link>
                     <Link href={'/keyboard'}><a className="text-xl mr-5 hover:text-black-900">Keyboard</a></Link>
                 </nav>
-                {/* Cart div */}
+                {/* account div */}
+                <div className='account cursor-pointer'>
+                    <Link href={'/login'}><MdAccountCircle className='text-3xl mx-2' /></Link>
+                </div>
                 <div onClick={toggleCart} className='cart cursor-pointer'>
                     <FaShoppingCart className='text-3xl mx-2' />
                 </div>
@@ -49,6 +53,7 @@ const Navbar = ({cart,addToCart,removeFromCart,clearCart}) => {
                            </div>
                        </li>})}
                     </ol>
+                    <div className='mt-6 text-xl font-bold'>SubTotal : ₨ {subTotal}</div>
                     <div className='flex'>
                     <Link href={'/checkout'}><button className="flex mx-1 mt-10 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-lg"><BsFillBagCheckFill className='mt-1'/>CheckOut</button></Link>
                     <button onClick={clearCart} className="flex mx-1 mt-10 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-lg">Clear Cart</button>

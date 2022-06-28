@@ -1,8 +1,8 @@
 import React from 'react'
 import {AiFillMinusCircle } from 'react-icons/ai';
 import {BsFillPlusCircleFill,BsFillBagCheckFill} from 'react-icons/bs';
-
-const checkout = ({cart,addToCart,removeFromCart}) => {
+import Link from 'next/link'
+const checkout = ({cart,addToCart,removeFromCart,subTotal}) => {
   return (
     <>
 
@@ -51,7 +51,7 @@ const checkout = ({cart,addToCart,removeFromCart}) => {
           <div className="flex flex-col text-center w-full my-8">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Review Cart Items</h1>
           </div>
-          <div className='mx-[190px] sidecart bg-orange-100 py-6 px-8 rounded-md'>
+          <div className='md:mx-[190px] sidecart bg-orange-100 py-6 px-8 rounded-md'>
             <h2 className='text-center font-bold text-xl'>Shopping Cart</h2>
             <ol className='list-decimal font-bold'>
               {Object.keys(cart).length == 0 && <div className='mt-4'>Your Cart is Empty!</div>}
@@ -64,7 +64,10 @@ const checkout = ({cart,addToCart,removeFromCart}) => {
                 </li>
               })}
             </ol>
-            {/* <span className='text-xl font-bold'>SubTotal :₨{subTotal}</span> */}
+            <span className='text-xl font-bold mt-6'>SubTotal :₨ {subTotal}</span>
+          </div>
+          <div className="md:ml-52 mt-2 sm:ml-4">
+          <Link href={'/order'}><button className="flex text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-lg"><BsFillBagCheckFill className='mt-1 mr-1'/>Pay Now</button></Link>
           </div>
         </div>
       </section>

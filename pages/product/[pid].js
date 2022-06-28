@@ -70,7 +70,7 @@ const Post = ({addToCart}) => {
                 </div>
                 <p className="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
                 <div className="flex mt-10">
-                  <span className="title-font font-medium text-2xl text-gray-900">$58.00</span>
+                  <span className="title-font font-medium text-2xl text-gray-900 w-auto">₨4990</span>
                   <button className="flex sm:text-sm ml-8 md:ml-14 text-white bg-orange-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-orange-600 rounded">Buy Now</button>
                   <button onClick={()=>{addToCart(pid,"hp - Leptoe 14 inche screen 4gb RAM,500 gb Storage.",1,499)}} className="flex sm:text-sm ml-1 md:ml-4 text-white bg-orange-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-orange-600 rounded">Add To Cart</button>
                   <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
