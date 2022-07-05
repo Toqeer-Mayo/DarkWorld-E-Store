@@ -9,26 +9,19 @@ npm run dev
 # or
 yarn dev
 ```
-
+##Home Page..
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![screenbud-4f3a91f7-086d-4446-b633-0bf78491553c](https://user-images.githubusercontent.com/76027073/176449153-231fd6bb-3251-4b04-b212-2b7bb9207a58.png)
+Items page..
+![screenbud-028a773c-e1b5-4f73-aaae-fa169c5ac753](https://user-images.githubusercontent.com/76027073/176450230-f1cd4a86-3a1f-4c93-867a-578088d3dd25.png)
+product page..
+![screenbud-838901f0-53a1-412d-b0a9-310e3f934d0a](https://user-images.githubusercontent.com/76027073/176450550-8054c983-028a-46b0-8a23-336fb7f701d9.png)
+Login page..
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![screenbud-bbaf485d-f42c-4a95-b911-d7bbf76cf818](https://user-images.githubusercontent.com/76027073/176451187-b11f2e63-d4e6-4357-89d2-704c3853e832.png)
 
-## Learn More
+Cart page..
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![screenbud-5643f563-1a48-4431-bbd9-5094501a769b](https://user-images.githubusercontent.com/76027073/176451464-15933971-c29e-4ac0-9de7-7a0069c5bcf6.png)
