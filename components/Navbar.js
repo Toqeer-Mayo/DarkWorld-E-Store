@@ -35,7 +35,7 @@ const Navbar = ({cart,addToCart,removeFromCart,clearCart,subTotal}) => {
                 </nav>
                 {/* account div */}
                 <div className='account cursor-pointer'>
-                    <Link href={'/login'}><MdAccountCircle className='text-3xl mx-2' /></Link>
+                    <Link href={'/login'}><a><MdAccountCircle className='text-3xl mx-2' /></a></Link>
                 </div>
                 <div onClick={toggleCart} className='cart cursor-pointer'>
                     <FaShoppingCart className='text-3xl mx-2' />
