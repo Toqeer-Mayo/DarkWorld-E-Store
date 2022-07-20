@@ -10,7 +10,7 @@ const keyboard = ({products}) => {
         <div className="flex flex-wrap -m-4">
         {products.map((items)=>{return <div key={items._id} className="mb-2 lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm shadow-slate-400">
             <Link href={'/product/p'}><a className="block relative rounded overflow-hidden">
-              <img alt="ecommerce" className="p-10 object-cover object-center w-full h-full block" src="https://m.media-amazon.com/images/I/81dLH5W903L._AC_UY218_.jpg"/>
+              <img alt="ecommerce" className="p-10 object-cover object-center w-full h-full block" src={items.img}/>
             <div className="mt-4">
               <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{items.category}</h3>
               <h2 className="text-gray-900 title-font text-lg font-medium">{items.title}</h2>

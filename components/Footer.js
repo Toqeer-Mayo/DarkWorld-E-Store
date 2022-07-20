@@ -10,7 +10,7 @@ const Footer = () => {
         <img className='rounded-full' src="/favicon.ico.jpg" alt="" width={"45"} height={"45"} />
         <span className="ml-3 text-xl">DarkWorld</span>
       </a>
-      <p className="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <p className="mt-2 ml-12 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
     </div>
     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">

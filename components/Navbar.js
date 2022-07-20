@@ -7,7 +7,6 @@ import { AiFillCloseCircle,AiFillMinusCircle } from 'react-icons/ai';
 import {BsFillPlusCircleFill,BsFillBagCheckFill} from 'react-icons/bs';
 import { useRef } from 'react';
 const Navbar = ({cart,addToCart,removeFromCart,clearCart,subTotal}) => {
-    console.log(cart)
     const ref = useRef();
     const toggleCart = () => {
         if (ref.current.classList.contains('translate-x-full')) {

@@ -4,7 +4,6 @@ import Product from '../models/Product'
 import mongoose from "mongoose"
 
 const phone = ({ products }) => {
-  console.log({ products })
   return (
     <>
       <section className="text-gray-600 body-font">
@@ -12,8 +11,8 @@ const phone = ({ products }) => {
           <div className="flex flex-wrap -m-4">
             {products.map((items) => {
               return <div key={items._id} className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm shadow-slate-400 my-2">
-                <Link href={'/product/hp leptos'}><a className="block relative rounded overflow-hidden">
-                  <img alt="ecommerce" className="p-10 object-cover object-center w-full h-full block" src="https://m.media-amazon.com/images/I/61ZNIHIEUqL._AC_UL320_.jpg" />
+                <Link passHref={true} href={`/product/${items.slug}`}><a className="block relative rounded overflow-hidden">
+                  <img alt="ecommerce" className="p-10 object-cover object-center w-full h-full block" src={items.img} />
                   <div className="mt-4">
                     <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{items.category}</h3>
                     <h2 className="text-gray-900 title-font text-lg font-medium">{items.title}</h2>
